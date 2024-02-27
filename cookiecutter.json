@@ -3,5 +3,6 @@
     "__directory_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "author_name": "Your Name",
     "author_email": "Your E Mail Address",
-    "compatible_python_versions": ">=3.11"
+    "dependency_manager": ["rye"],
+    "compatible_python_versions": ">=3.10.0"
 }

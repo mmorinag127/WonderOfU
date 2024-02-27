@@ -12,7 +12,7 @@ This repository provides a template that incorporates best practices to create a
 * [pdoc](https://github.com/pdoc3/pdoc): Automatically create an API documentation for your project
 * [pre-commit plugins](https://pre-commit.com/): Automate code reviewing formatting
 * [Rye](https://github.com/astral-sh/rye): Dependency and virtual environment management
-* [DVC](Data version control): Manage data version
+* [DVC](https://github.com/iterative/dvc): Manage data version
 * 
 
 ## How to use this project
@@ -24,7 +24,7 @@ pipx install cookiecutter
 
 Create a project based on the template:
 ```bash
-cookiecutter https://github.com/khuyentran1401/data-science-template
+cookiecutter https://github.com/mmorinag127/WonderOfU
 ```
 
 ## Resources for a detailed explanation of this template:
