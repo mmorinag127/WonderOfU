@@ -6,10 +6,10 @@ install:
 	@echo "Rye will pin Python version" {{ cookiecutter.compatible_python_versions }}
 	rye pin {{ cookiecutter.compatible_python_versions }}
 	rye sync
-	@echo "Installing pre-commit..."
-	rye run pre-commit install
 	@echo "Initializing Git..."
 	git init
+	@echo "Installing pre-commit..."
+	rye run pre-commit install
 
 activate:
 	@echo "Activating virtual environment"

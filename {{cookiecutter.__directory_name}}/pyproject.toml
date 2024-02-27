@@ -1,9 +1,9 @@
 [project]
-name = "test-rye"
-version = "0.1.0"
+name = "{{ cookiecutter.__directory_name }}"
+version = "{{ cookiecutter.project_version }}"
 description = "Add your description here"
 authors = [
-    { name = "Masahiro Morinaga", email = "Masahiro.Morinaga@cern.ch" }
+    { name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}" }
 ]
 dependencies = [
     "jaxlib @ https://storage.googleapis.com/jax-releases/cuda12/jaxlib-0.4.25+cuda12.cudnn89-cp311-cp311-manylinux2014_x86_64.whl",
@@ -17,11 +17,9 @@ dependencies = [
     "einops>=0.7.0",
     "wandb>=0.16.3",
     "matplotlib>=3.8.3",
-    "ruff>=0.2.2",
-    "mypy>=1.8.0",
 ]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">={{ cookiecutter.compatible_python_versions }}"
 
 [build-system]
 requires = ["hatchling"]
@@ -30,6 +28,8 @@ build-backend = "hatchling.build"
 [tool.rye]
 managed = true
 dev-dependencies = [
+    "ruff>=0.2.2",
+    "mypy>=1.8.0",
     "pdoc3>=0.10.0",
     "pre-commit>=3.6.2",
     "pytest>=8.0.2",
