@@ -2,8 +2,8 @@
     "project_name": "Project Name",
     "project_version": "0.1.0",
     "__directory_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "author_name": "Your Name",
-    "author_email": "Your E Mail Address",
+    "author_name": "Masahiro Morinaga",
+    "author_email": "Masahiro.Morinaga@cern.ch",
     "dependency_manager": ["rye"],
     "compatible_python_versions": "3.11"
 }
